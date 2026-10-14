@@ -1,0 +1,21 @@
+You are an expert technical writer. Write a professional, crystal-clear README.md file for the GitHub repository "jobnex" (https://github.com/kolkarnisha/jobnex.git). The project is a resume + job description analyzer backend built with Python, FastAPI, and SQL. The README should be structured, visually appealing, and beginner-friendly while maintaining professional standards.
+
+The README must include:
+1. **Project Title & Tagline** – A concise, catchy title and one-line description.
+2. **Overview** – What the project does (resume parsing, job description analysis, matching scores).
+3. **Features** – Key functionalities (e.g., resume upload, JD parsing, similarity scoring, API endpoints).
+4. **Tech Stack** – Python, FastAPI, SQL, and any other dependencies.
+5. **Installation Guide** – Step-by-step instructions to clone, set up environment, install dependencies, and run locally.
+6. **Usage Instructions** – How to start the server, example API calls, and sample input/output.
+7. **Folder Structure** – A clear breakdown of the repository’s organization.
+8. **Contributing Guidelines** – How others can contribute.
+9. **Future Scope** – Planned improvements (e.g., AI-powered resume ranking, frontend integration).
+10. **License** – MIT or whichever license applies.
+11. **Contact Info** – Maintainer details (Kolkar Nisha, LinkedIn/GitHub).
+
+Style Guidelines:
+- Use **Markdown formatting** with headings, bullet points, and code blocks.
+- Include emojis for readability (e.g., 🚀, 📂, ⚡).
+- Keep explanations concise but clear.
+- Provide copy-paste-ready commands for installation and usage.
+- Ensure the README looks professional and recruiter-friendly.
