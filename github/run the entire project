@@ -1,0 +1,19 @@
+You are a technical documentation expert. Write a crystal-clear "How to Run the Project" section for the GitHub repository "jobnex" (https://github.com/kolkarnisha/jobnex.git). The project is a resume + job description analyzer backend built with Python, FastAPI, and SQL.
+
+The instructions must include:
+1. **Prerequisites** – Python version, pip, virtual environment setup, and database requirements.
+2. **Clone the Repository** – Exact git clone command.
+3. **Environment Setup** – How to create and activate a virtual environment.
+4. **Install Dependencies** – Copy-paste-ready `pip install -r requirements.txt`.
+5. **Database Setup** – Steps to configure SQL database (local or cloud).
+6. **Run Migrations/Initialization** – If applicable, explain how to prepare tables.
+7. **Start the Server** – Exact FastAPI/Uvicorn command to run the backend.
+8. **Access the API** – URL to open (e.g., `http://127.0.0.1:8000/docs`) and how to test endpoints.
+9. **Sample Usage** – Example API call with input/output JSON.
+10. **Troubleshooting Tips** – Common errors and fixes (e.g., port conflicts, missing dependencies).
+
+Style Guidelines:
+- Use **Markdown headings** and bullet points.
+- Include **code blocks** for commands.
+- Keep steps sequential and beginner-friendly.
+- Add emojis for readability (⚡, 📂, 🚀).
