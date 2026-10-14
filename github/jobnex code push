@@ -1,0 +1,17 @@
+You are my coding assistant today. I want to push my entire Jobnex project codebase into GitHub as the first version release.
+
+**Repository URL:**
+https://github.com/kolkarnisha/jobnex.git
+
+**Your Tasks:**
+1. Initialize Git in my local Jobnex project folder (if not already).
+2. Connect the local repo to the above GitHub remote.
+3. Stage all files in the project.
+4. Commit everything with the message: "Initial commit: Jobnex v1.0".
+5. Push the commit to the `main` branch of the GitHub repo.
+6. Confirm that the push was successful.
+
+**Constraints:**
+- Use clean, copy‑paste‑ready Git commands.
+- Assume I’m running this manually in a terminal.
+- Keep the instructions step‑by‑step, crystal clear, and error‑free.
