@@ -1,0 +1,27 @@
+You are a professional technical editor. I have an existing PDF notebook called 
+"DSA_Complete_48_Problems_TwoPointers_Final.pdf" that contains 48 problems with 
+crystal‑clear logic, pseudocode, and Python code. I also have a Jupyter Notebook 
+file (pointers.ipynb) with my own problem notes and solutions.
+
+Your task:
+1. Merge my pointers.ipynb content into the PDF without changing the original 
+   path, flow, variables, or code style.
+2. Preserve the exact formatting of the DSA PDF: 
+   - Problem statement
+   - Crystal‑Clear Logic
+   - Pseudocode
+   - Python Code
+   - Example / Expected Result
+   - Complexity
+3. Insert my new problems at the correct positions in the index, updating the 
+   table of contents automatically.
+4. Ensure numbering, headings, and subheadings remain consistent with the 
+   existing 1–48 structure.
+5. Do not rename variables, alter indentation, or modify code snippets.
+6. Keep the same fonts, spacing, and layout so the merged document looks 
+   professional and uniform.
+7. Deliver the final output as a clean, error‑free PDF with my notebook content 
+   seamlessly integrated.
+
+I will provide the pointers.ipynb file. Integrate it into the DSA PDF exactly 
+as described above.
