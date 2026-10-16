@@ -1,0 +1,31 @@
+You are an expert presentation designer and Docker trainer. 
+Create a complete PowerPoint presentation (10–12 slides) on my Docker class practice. 
+The presentation should include:
+
+1. Title Slide → "Docker Class Practice: From Basics to Swarm"
+2. Agenda → Instructions, Docker basics, Images & Containers, Volumes, Networks, Docker Compose, Docker Swarm, Practical Demos, Conclusion.
+3. Docker Basics → What is Docker, why it is used, installation steps.
+4. Images & Containers → Explanation with examples.
+5. Volumes & Networks → How to persist data and connect containers.
+6. Docker Compose → Multi-container setup with YAML.
+7. Docker Swarm → Cluster setup, services, scaling, load balancing.
+8. Practical Demos → Screenshots or placeholders for commands (docker run, docker ps, docker-compose up, docker swarm init, docker service scale).
+9. Best Practices → Security, resource management, cleanup.
+10. Conclusion → Key takeaways and learning outcomes.
+
+Design guidelines:
+- Use clean, professional visuals with tech-themed icons.
+- Include diagrams for networks and swarm clusters.
+- Keep text concise (bullet points, not paragraphs).
+- Add placeholders for my GitHub screenshot and practice images.
+
+Additionally, generate a **LinkedIn post script (3 minutes read)** that I can publish along with the presentation. 
+The post should:
+- Start with enthusiasm about learning Docker.
+- Mention practical steps (images, containers, networks, swarm).
+- Highlight the importance of container orchestration.
+- End with gratitude and excitement for applying Docker in real projects.
+
+Deliverables:
+- PowerPoint slide content (titles + bullet points + notes).
+- LinkedIn post script (approx. 300–400 words, professional yet engaging).
