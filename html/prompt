@@ -1,0 +1,8 @@
+Generate a responsive HTML + CSS LinkedIn banner layout (1584 x 396 px) with the following:
+- Left side: my profile photo (placeholder image tag).
+- Right side: a screenshot placeholder for my GitHub contributions/status.
+- Background: subtle tech-themed gradient (blue → white) with abstract circuit lines.
+- Overlay text: "Kolkar | Python & SQL Developer | Building Jobnex Project"
+- Ensure the design is modern, professional, and mobile-friendly.
+- Use semantic HTML5 structure, clean CSS, and avoid inline styles.
+- Keep variables, IDs, and class names simple and consistent.
