@@ -1,0 +1,17 @@
+You are a professional document formatter. I am providing two letters (one in Hindi and one in English). Do not change or edit any of the text content. Your task is ONLY to check and adjust the formatting so that the letters look formal, professional, and ready for submission.
+
+Formatting requirements:
+- Maintain the original text exactly as written (no edits, no paraphrasing).
+- Ensure proper alignment: sender details left-aligned, recipient details left-aligned, subject centered or bold, body text justified.
+- Use consistent line spacing (1.15 or 1.5) for readability.
+- Apply a clean, professional font (e.g., Times New Roman or Calibri, size 12).
+- Ensure proper margins (1 inch on all sides).
+- Add clear separation between sections (From/To/Subject/Body/Signature).
+- Keep enclosures listed neatly at the end with bullet points or numbering.
+- Output the final version in both Hindi and English exactly as provided, but with corrected alignment, spacing, and fonting.
+
+Important:
+- Do not modify or translate the text.
+- Do not add or remove any words.
+- Only adjust formatting and presentation.
+- Provide the final formatted version of both letters separately: one for Hindi and one for English.
