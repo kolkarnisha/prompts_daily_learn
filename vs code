@@ -1,0 +1,31 @@
+Analyze every file in my project folder, including:
+- Backend Python files (e.g., backend.py, database.py, analyzer.py, test_db.py, test_analyzer.py, insert_test.py)
+- Frontend files (.html, .css, .js)
+
+Perform the following tasks:
+1. **Backend Execution Check**
+   - Identify syntax errors, runtime risks, or unhandled exceptions.
+   - Flag inefficient queries or logic in database interactions.
+   - Highlight missing imports, unused variables, or circular dependencies.
+
+2. **Frontend–Backend Connection Audit**
+   - Map API routes/endpoints in backend to corresponding frontend calls.
+   - Detect mismatches in request/response formats (e.g., JSON keys, status codes).
+   - Verify that frontend forms, buttons, and scripts correctly trigger backend functions.
+
+3. **Integration Consistency**
+   - Check if HTML pages are properly linked with CSS and JS files.
+   - Ensure JavaScript fetch/axios calls match backend routes and expected parameters.
+   - Suggest corrections if backend logic doesn’t align with frontend expectations.
+
+4. **Bug & Error Report**
+   - Generate a structured report with:
+     - File name
+     - Line number (if applicable)
+     - Issue description
+     - Suggested fix or improvement
+
+Output should be:
+- A clear, step‑by‑step bug/error report
+- Recommendations for backend logic changes to improve frontend integration
+- Notes on potential runtime issues during execution
