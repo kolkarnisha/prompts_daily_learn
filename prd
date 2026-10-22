@@ -1,0 +1,71 @@
+You are an AI coding assistant working inside VS Code.  
+My project folder is named `best_pro` and it already contains empty backend files.  
+Do NOT rename, delete, or restructure files — only fill them with backend code.  
+
+Create a **Product Requirements Document (PRD)** for the backend implementation of Jobnex MVP‑2.  
+
+The PRD must include:
+
+1. **Overview & Objectives**
+   - Purpose: Build scalable backend APIs for Jobnex MVP‑2.
+   - Goals: Enable job filtering, resume analysis, interview prep, automation, and privacy controls.
+
+2. **Scope of Features**
+   - Certifications & Experience Filtering
+   - AI Chatbot/Assistant
+   - Interview Questions Preparation
+   - Region Filters (US/Global/India/Bangalore)
+   - Course Suggestions for Missing Skills
+   - Central Dashboard for Applied Jobs/Status Updates
+   - Automatic Job Apply
+   - Automatic Job Refusal Emails
+   - Social Login (Google) & Direct Login
+   - Privacy Controls for Resume Information
+   - Resume + Job Description Analysis (with match score, matched/missing skills, suggestions, interview prep, resources)
+
+3. **Database Schema**
+   - Use SQLAlchemy/MySQL.
+   - Include `resume_analyzer` table with fields:
+     - analysis_id (INT, PK, auto_increment)
+     - resume_text (LONGTEXT, NOT NULL)
+     - jd_text (LONGTEXT, NOT NULL)
+     - created_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)
+     - match_score (DECIMAL(5,2))
+     - matched_skills (JSON)
+     - missing_skills (JSON)
+     - sugesstions (JSON)
+     - certifications (TEXT)
+     - experience_years (INT)
+     - region_filter (VARCHAR(50))
+     - interview_prep (TEXT)
+     - suggested_resources (TEXT)
+     - dashboard_status (VARCHAR(50))
+     - auto_apply (TINYINT(1), DEFAULT 0)
+     - auto_refusal (TINYINT(1), DEFAULT 0)
+     - social_login (VARCHAR(20))
+     - privacy_setting (VARCHAR(20))
+
+4. **Functional Requirements**
+   - API endpoints for each feature.
+   - Resume/JD analysis logic: normalize text, compare skills, compute match score, populate JSON fields.
+   - Automation flags for job apply/refusal.
+   - Privacy enforcement for resume data.
+   - OAuth2 integration for Google login.
+
+5. **Non‑Functional Requirements**
+   - Scalability: MVP2 → MVP3 expansion.
+   - Security: Session management, privacy flags.
+   - Modularity: Separate routes, models, services.
+   - Documentation: Clear comments for each feature.
+
+6. **Deliverables**
+   - Fully implemented backend code inside existing empty files in `best_pro`.
+   - Each feature mapped to its own route/service/model.
+   - No file renaming or restructuring.
+
+7. **Acceptance Criteria**
+   - All endpoints functional and tested.
+   - Resume analyzer returns JSON aligned with schema.
+   - Dashboard aggregates job status correctly.
+   - Privacy settings respected in API responses.
+   - Social login and direct login both operational.
