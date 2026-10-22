@@ -1,0 +1,90 @@
+You are an AI coding assistant working inside VS Code.  
+My project folder is named `best_pro` and it already contains empty backend files.  
+Do NOT rename, delete, or restructure files — only fill them with backend code.  
+
+Implement the following backend features step by step:
+
+1. **Certifications & Experience Filtering**  
+   - Create API endpoints to filter jobs by certifications and years of experience.  
+   - Ensure queries support multiple filters simultaneously.
+
+2. **AI Chatbot/Assistant**  
+   - Add a FastAPI route for chatbot interactions.  
+   - Integrate a placeholder function for AI responses (to be connected later with an NLP model).
+
+3. **Interview Questions Preparation**  
+   - Build an endpoint that serves interview questions based on job role/skills.  
+   - Store sample questions in a database table.
+
+4. **Region Filters (US/Global/India/Bangalore)**  
+   - Extend job search API with region filters.  
+   - Use enums or constants for region codes.
+
+5. **Course Suggestions for Missing Skills**  
+   - After job recommendations, add logic to suggest courses/resources for missing skills.  
+   - Create a separate table for skill‑to‑course mapping.
+
+6. **Central Dashboard for Applied Jobs/Status Updates**  
+   - Implement endpoints to track applied jobs, status (applied, interview, rejected).  
+   - Return aggregated dashboard data for each user.
+
+7. **Automatic Job Apply**  
+   - Add a function that auto‑submits applications to stored job listings.  
+   - Include safeguards (confirmation flags, logging).
+
+8. **Automatic Job Refusal Emails**  
+   - Implement backend logic to send refusal emails automatically.  
+   - Use SMTP or an email API integration (placeholder for now).
+
+9. **Social Login (Google) & Direct Login**  
+   - Add OAuth2 login with Google.  
+   - Maintain direct login with username/password.  
+   - Store user sessions securely.
+
+10. **Privacy Controls for Resume Information**  
+    - Add user settings to mark resume as public or private.  
+    - Ensure APIs respect privacy flags when serving resume data.
+
+11. **Resume + Job Description Analysis**  
+    - Create FastAPI endpoints to accept `resume_text` and `jd_text` via POST.  
+    - Normalize text (lowercase, strip punctuation).  
+    - Compare against a predefined skill list (Python, SQL, React, FastAPI, Docker, etc.).  
+    - Compute `match_score = (matched_skills ÷ total_skills) × 100`.  
+    - Populate `matched_skills` and `missing_skills` (JSON).  
+    - Generate `sugesstions` for missing skills (e.g., “Learn Docker and add to resume”).  
+    - Provide `interview_prep` questions based on missing skills.  
+    - Suggest learning resources (`suggested_resources`) for missing skills.  
+    - Accept optional filters: certifications, experience_years, region_filter.  
+    - Return a JSON object with keys exactly matching the schema.
+
+**Database Schema (resume_analyzer):**
+- analysis_id (INT, PK, auto_increment)  
+- resume_text (LONGTEXT, NOT NULL)  
+- jd_text (LONGTEXT, NOT NULL)  
+- created_at (TIMESTAMP, DEFAULT CURRENT_TIMESTAMP)  
+- match_score (DECIMAL(5,2))  
+- matched_skills (JSON)  
+- missing_skills (JSON)  
+- sugesstions (JSON)  
+- certifications (TEXT)  
+- experience_years (INT)  
+- region_filter (VARCHAR(50))  
+- interview_prep (TEXT)  
+- suggested_resources (TEXT)  
+- dashboard_status (VARCHAR(50))  
+- auto_apply (TINYINT(1), DEFAULT 0)  
+- auto_refusal (TINYINT(1), DEFAULT 0)  
+- social_login (VARCHAR(20))  
+- privacy_setting (VARCHAR(20))  
+
+**General Requirements:**  
+- Use FastAPI for backend routes.  
+- Use SQLAlchemy/MySQL for database models.  
+- Keep code modular: separate routes, models, and services.  
+- Add clear comments for each feature.  
+- Maintain scalability for MVP2 → MVP3 expansion.  
+
+Output:  
+- Fully implemented backend code inside existing empty files in `best_pro`.  
+- Each feature mapped to its own route/service/model as needed.  
+- No file renaming or restructuring.  
