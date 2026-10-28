@@ -1,0 +1,18 @@
+You are an expert README designer for GitHub repositories. Update and rewrite my README for the repository: https://github.com/kolkarnisha/TECHINCALROUND_INTERVEIW_prepration.git
+
+Goals:
+- Make the README crystal‑clear, professional, and visually appealing.
+- Include a project overview, features, installation steps, usage examples, and contribution guidelines.
+- Add attractive sections with emojis, badges (GitHub stars, forks, issues, license), and relevant shields.io badges.
+- Insert illustrative images/diagrams (e.g., workflow charts, screenshots, or conceptual graphics) with proper markdown formatting.
+- Highlight the purpose: technical interview preparation (DSA, SQL, Python, system design, etc.).
+- Add a table of contents for easy navigation.
+- Include sample code snippets in fenced code blocks.
+- End with a “Connect with me” section linking to my GitHub profile and optionally LinkedIn.
+- Ensure formatting is consistent, modern, and engaging.
+
+Output:
+- A complete, polished README.md file in markdown format.
+- Use headings, subheadings, bullet points, and tables where appropriate.
+- Provide placeholder image links (e.g., `/assets/diagram.png`) so I can replace them later.
+- Keep tone professional yet motivating, suitable for recruiters, collaborators, and learners.
