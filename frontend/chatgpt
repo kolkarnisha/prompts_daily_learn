@@ -1,0 +1,543 @@
+# JOBNEX MVP-2 — Complete Frontend Upgrade & New Feature Integration
+
+You are a Senior Full-Stack Developer, UI/UX Designer, Frontend Architect and SaaS Product Engineer.
+
+Your task is to upgrade my existing **JOBNEX Career Intelligence Platform** by integrating two major features and applying the new UI design consistently across the ENTIRE frontend.
+
+This is an existing project. Do not build a separate application or replace the existing project with a new template.
+
+Your responsibility is to understand the existing codebase, preserve working functionality, integrate the new features, and deliver a polished, fully functional frontend connected to the existing FastAPI backend.
+
+---
+
+# 1. EXISTING PROJECT CONTEXT
+
+My existing frontend uses:
+
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Shared JavaScript controller: `common.js`
+- Shared stylesheet: `common.css`
+- API integration: `api.js`
+- Backend: Python FastAPI
+- Database: Existing backend database
+
+Existing frontend files include:
+
+- `index.html`
+- analyzer.html
+- `login.html`
+- `dashboard.html`
+- `jobs.html`
+- `applications.html`
+- `interview.html`
+- `courses.html`
+- `chatbot.html`
+- `privacy.html`
+- `common.css`
+- `common.js`
+- `api.js`
+
+There may be additional files in the project. Inspect the complete repository before modifying anything.
+
+Important: Some pages link to `analyzer.html`, but this file may not be included in the supplied frontend files. Check whether it exists elsewhere in the project before creating or modifying it.
+
+# 2. NEW FEATURE ONE — JOB UPLOAD + ATS SCORE + RESUME TAILORING
+
+Build a complete workflow connecting job-description uploads with the existing Resume Analyzer.
+
+## A. Job Upload Module
+
+Create a dedicated section called:
+
+**Upload a Job Description**
+
+Allow users to:
+
+1. Upload a job description document.
+2. Accept PDF, DOCX and TXT where supported.
+3. Paste a job description directly into a text editor.
+4. Enter job title.
+5. Enter company name.
+6. Enter job location.
+7. Enter experience requirements.
+8. Add the job application URL.
+9. Review the uploaded job information.
+10. Submit the job for analysis.
+
+Provide drag-and-drop upload, file validation, upload progress and clear error messages.
+
+## B. Connect Job Upload to ATS Analysis
+
+After the job description is submitted:
+
+Automatically connect the job description to the existing resume analysis workflow.
+
+The workflow should be:
+
+Job Upload → Job Description Extraction → Resume Selection/Upload → ATS Analysis → Results Dashboard.
+
+The system should compare the candidate's resume against the selected job description.
+
+Display:
+
+- Overall ATS compatibility score.
+- Keyword matching percentage.
+- Matched skills.
+- Missing skills.
+- Required versus available qualifications.
+- Experience alignment.
+- Education alignment.
+- Technical skill gaps.
+- Resume formatting observations.
+- Improvement recommendations.
+
+Use attractive visual elements such as progress indicators, score cards, charts and skill comparison sections.
+
+IMPORTANT:
+
+Do not generate arbitrary ATS scores using hardcoded numbers or random values.
+
+Use the existing backend analysis API wherever possible. Inspect its actual response structure and map the returned fields to the frontend.
+
+If the backend does not support a particular analysis, identify the missing API contract instead of pretending that the functionality works.
+
+## C. Resume Tailoring Module
+
+After the ATS analysis, provide a dedicated section:
+
+**AI Resume Tailoring**
+
+Allow users to:
+
+- Identify missing job-specific keywords.
+- Improve resume professional summaries.
+- Rewrite experience descriptions.
+- Improve project descriptions.
+- Suggest relevant technical skills.
+- Improve ATS readability.
+- Generate job-specific resume content.
+- Compare original and tailored content.
+- Review every suggested modification.
+- Accept or reject individual suggestions.
+- Download the final tailored resume when supported.
+
+Preserve the candidate's actual experience, qualifications and achievements.
+
+Never invent professional experience, skills, certifications or measurable achievements.
+
+The tailored resume must remain editable.
+
+## D. Analysis History
+
+Save and display previous analyses where the backend supports persistence.
+
+Each analysis should contain:
+
+- Job title.
+- Company.
+- Analysis date.
+- ATS score.
+- Resume used.
+- Analysis status.
+- View report action.
+- Re-analyze action.
+
+Ensure that the same job and resume can be analyzed again without creating confusing duplicate records.
+
+---
+
+# 3. NEW FEATURE TWO — RECRUITERS SECTION
+
+Create a completely new frontend module:
+
+**Recruiter Intelligence / Recruiters**
+
+This should become a dedicated navigation item across JOBNEX.
+
+The objective is to help candidates discover relevant recruiters, understand their hiring areas and manage professional outreach.
+
+## A. Recruiter Discovery Dashboard
+
+Design an attractive recruiter discovery page.
+
+Include:
+
+- Recruiter search bar.
+- Recruiter profile cards.
+- Company information.
+- Recruiter designation.
+- Hiring specialization.
+- Relevant job roles.
+- Location.
+- Professional profile link, when available.
+- Verification status, only when supported by real data.
+
+Provide filters for:
+
+- Company.
+- Industry.
+- Job role.
+- Location.
+- Hiring specialization.
+
+## B. Recruiter Profile
+
+Each recruiter profile should have:
+
+- Profile image or initials.
+- Recruiter name.
+- Designation.
+- Company.
+- Industry.
+- Hiring specialization.
+- Relevant job openings.
+- Professional profile URL.
+- Contact information, only when legitimately available.
+
+Add actions:
+
+- View Profile.
+- Save Recruiter.
+- Contact Recruiter.
+- Generate Outreach Message.
+
+Do not invent real recruiter identities, personal contact information or verified employment details.
+
+If no recruiter API or dataset currently exists, create a clearly labelled demo-data mode and identify the backend integration required for real recruiter discovery.
+
+## C. AI Recruiter Outreach
+
+Integrate a professional recruiter communication assistant.
+
+Allow candidates to generate personalized outreach messages based on:
+
+- Recruiter profile.
+- Target company.
+- Target job role.
+- Candidate resume.
+- Relevant skills.
+- Existing job application.
+- Referral request context.
+
+Generate:
+
+1. LinkedIn connection message.
+2. Recruiter introduction message.
+3. Job application follow-up.
+4. Referral request.
+5. Interview follow-up.
+
+Include:
+
+- Editable message.
+- Copy message.
+- Regenerate message.
+- Save draft.
+- Email subject and body where appropriate.
+
+Never automatically send messages without explicit user action.
+
+## D. Saved Recruiters
+
+Create a saved recruiter list.
+
+Users should be able to:
+
+- Save recruiters.
+- Remove saved recruiters.
+- Search saved recruiters.
+- View previous outreach drafts.
+- Track outreach status.
+
+Persist information through the existing backend if supported. Otherwise, use a clearly documented temporary local-storage fallback.
+
+---
+
+# 4. COMPLETE FRONTEND UI REDESIGN
+
+This is a major requirement.
+
+I will provide the new UI design reference/screenshots and design instructions.
+
+Study those references carefully and apply the same visual language throughout the entire JOBNEX frontend.
+
+Do not redesign only the two new modules.
+
+Every existing page must follow the new design consistently.
+
+## Pages to redesign
+
+1. Login.
+2. Dashboard.
+3. Job Search.
+4. Resume Analyzer.
+5. Job Upload.
+6. ATS Analysis Results.
+7. Resume Tailoring.
+8. Recruiters.
+9. Applications & Referrals.
+10. Interview Preparation.
+11. Courses & Skill Development.
+12. Chatbot / JobNex Copilot.
+13. Privacy & Settings.
+
+If the supplied design references conflict with the current shared stylesheet, follow the approved new design while preserving functional compatibility.
+
+## Design requirements
+
+Create a consistent professional SaaS experience with:
+
+- Modern navigation.
+- Consistent sidebar/header.
+- Clean typography.
+- Balanced spacing.
+- Professional card layouts.
+- Consistent button styles.
+- Attractive form elements.
+- Modern data visualizations.
+- Clear page hierarchy.
+- Smooth transitions.
+- Subtle hover effects.
+- Loading skeletons.
+- Empty states.
+- Success and error notifications.
+- Responsive layouts.
+
+Avoid excessive gradients, unnecessary animations, overcrowded cards and oversized headings.
+
+Maintain accessibility, readable contrast and intuitive navigation.
+
+## Navigation
+
+Organize the platform into a logical navigation structure.
+
+Suggested navigation:
+
+**OVERVIEW**
+- Dashboard
+
+**CAREER INTELLIGENCE**
+- Find Jobs
+- Upload Job
+- Resume Analyzer
+- ATS Analysis
+- Resume Tailoring
+
+**RECRUITER NETWORK**
+- Recruiters
+- Saved Recruiters
+
+**APPLICATION MANAGEMENT**
+- Applications
+- Referrals
+
+**CAREER DEVELOPMENT**
+- Interview Preparation
+- Courses & Skills
+
+**PREFERENCES**
+- Privacy & Settings
+
+Keep JobNex Copilot accessible across authenticated pages.
+
+Do not display authenticated navigation on the login page.
+
+Ensure active navigation states, correct page links and responsive mobile navigation.
+
+---
+
+# 5. FUNCTIONAL INTEGRATION REQUIREMENTS
+
+This is not a static UI design assignment.
+
+Every visible button, form, filter, upload control and navigation item must have meaningful functionality.
+
+Requirements:
+
+1. Preserve existing backend API contracts.
+2. Reuse existing API methods where possible.
+3. Add new API methods only after identifying the required backend endpoints.
+4. Maintain consistent error handling.
+5. Handle loading and empty states.
+6. Validate user inputs.
+7. Prevent duplicate form submissions.
+8. Preserve existing authentication/session behaviour.
+9. Avoid breaking existing local persistence.
+10. Ensure all page scripts load correctly.
+11. Avoid duplicate event listeners.
+12. Prevent unsafe HTML injection.
+13. Keep frontend data structures consistent with backend responses.
+
+For file uploads, use `FormData` and multipart requests when the backend supports them. Do not send binary files as JSON.
+
+Inspect the existing `api.js` carefully before changing it. Preserve working methods and correct any integration issues you identify.
+
+Do not invent backend endpoint URLs or request/response formats.
+
+If a new backend endpoint is required, document the exact endpoint, HTTP method, request schema and expected response schema.
+
+---
+
+# 6. TECHNICAL QUALITY REQUIREMENTS
+
+Follow these principles:
+
+- Maintain the existing Vanilla JavaScript architecture.
+- Do not migrate to React or another framework.
+- Avoid unnecessary dependencies.
+- Use reusable components and shared CSS classes.
+- Maintain a single consistent design system.
+- Keep HTML semantic and accessible.
+- Use responsive CSS.
+- Use modular JavaScript functions.
+- Avoid duplicate CSS rules.
+- Avoid hardcoded fake analytics.
+- Do not remove existing working functionality.
+- Do not overwrite the original project without keeping a backup.
+
+All changes must work with the existing project structure.
+
+---
+
+# 7. EXECUTION STRATEGY
+
+Follow this sequence.
+
+### Phase 1 — Codebase Audit
+
+Inspect the complete project.
+
+Identify:
+
+- Existing pages.
+- Shared components.
+- Navigation implementation.
+- Existing Resume Analyzer logic.
+- Existing ATS analysis API.
+- Resume upload implementation.
+- Backend API integration.
+- Authentication and session management.
+- Existing design system.
+- Existing reusable components.
+
+Before coding, provide a concise audit of what exists, what can be reused and what needs modification.
+
+### Phase 2 — UI Design Integration
+
+Study the supplied UI reference.
+
+Establish consistent:
+
+- Design tokens.
+- Typography.
+- Colors.
+- Spacing.
+- Navigation.
+- Cards.
+- Buttons.
+- Forms.
+- Responsive behaviour.
+
+Apply the approved design across all existing and new pages.
+
+### Phase 3 — New Feature Development
+
+Implement:
+
+1. Job Upload.
+2. ATS Analysis Integration.
+3. Resume Tailoring.
+4. Analysis History.
+5. Recruiter Discovery.
+6. Recruiter Profiles.
+7. Saved Recruiters.
+8. AI Recruiter Outreach.
+
+Connect everything to existing backend functionality where available.
+
+### Phase 4 — Cross-Page Integration
+
+Verify that:
+
+- Dashboard links work.
+- Job Upload connects to Resume Analyzer.
+- Job Description data reaches ATS analysis.
+- ATS results connect to Resume Tailoring.
+- Tailored resume can be saved.
+- Recruiter outreach connects to job applications.
+- Applications remain functional.
+- Copilot works across pages.
+- Navigation is consistent.
+
+### Phase 5 — Testing and Quality Assurance
+
+Test:
+
+- Every page.
+- Every navigation link.
+- Every button.
+- Every form.
+- File upload validation.
+- API request and response handling.
+- Login and logout.
+- Session persistence.
+- Responsive mobile layouts.
+- Console errors.
+- Broken paths.
+- Backend connectivity.
+- Existing functionality regression.
+
+Do not mark a feature complete just because its UI renders.
+
+---
+
+# 8. FINAL DELIVERABLES
+
+I expect:
+
+1. Complete updated frontend source code.
+2. Updated shared stylesheet.
+3. Updated shared JavaScript.
+4. Updated API integration.
+5. New Job Upload page/module.
+6. Updated ATS analysis and resume tailoring workflow.
+7. New Recruiters page/module.
+8. Updated navigation across the platform.
+9. Updated responsive UI across all pages.
+10. Integration documentation.
+11. Backend API requirements for unsupported features.
+12. Testing report.
+
+Provide a clear list of:
+
+- Files created.
+- Files modified.
+- Existing functionality preserved.
+- New functionality implemented.
+- Backend changes still required.
+- Features fully tested.
+- Known limitations.
+
+# 9. IMPORTANT WORKING INSTRUCTIONS
+
+Do not stop after creating a visual prototype.
+
+Do not return only code snippets or suggestions.
+
+Work directly with the existing project files.
+
+Make changes incrementally and preserve a backup.
+
+Do not remove existing features to simplify implementation.
+
+If a backend dependency is missing, finish the frontend integration with an honest, clearly labelled unavailable state and document the required backend contract.
+
+Do not claim that ATS analysis, recruiter discovery, file processing or resume generation is functional unless it has actually been implemented and tested.
+
+**FINAL OBJECTIVE:**
+
+Transform JOBNEX into a cohesive, modern, responsive AI-powered career intelligence platform where users can upload jobs, analyze ATS compatibility, tailor resumes, discover recruiters, generate outreach messages, manage applications and prepare for interviews through one consistent interface.
+
+Prioritize functionality, consistency, maintainability and professional product quality over simply making the interface look attractive.
