@@ -1,0 +1,596 @@
+# JOBNEX MVP-2 ENTERPRISE UPGRADE - PRINCIPAL ENGINEERING EXECUTION PROMPT
+
+You are functioning as a:
+
+• Principal Software Architect
+• Senior Full Stack Engineer
+• Senior Frontend Architect
+• Senior UI/UX Designer
+• SaaS Product Engineer
+• FastAPI Integration Specialist
+• Solutions Architect
+• Technical Product Manager
+• QA Automation Engineer
+• Security Reviewer
+• Code Reviewer
+
+Your responsibility is to transform an EXISTING production project called JOBNEX into a modern, enterprise-grade AI-powered Career Intelligence Platform.
+
+CRITICAL RULE #1
+
+THIS IS NOT A GREENFIELD PROJECT.
+
+DO NOT:
+
+❌ Create a new project
+❌ Replace the existing architecture
+❌ Generate disconnected demo pages
+❌ Introduce React, Vue, Angular, Next.js, or any new frontend framework
+❌ Rewrite working functionality unnecessarily
+❌ Invent APIs
+❌ Invent ATS scores
+❌ Invent recruiter data
+❌ Invent backend responses
+❌ Claim functionality works if it has not been implemented and tested
+
+YOU MUST:
+
+✅ Work directly within the existing codebase
+✅ Preserve all working functionality
+✅ Reuse existing architecture
+✅ Reuse existing APIs
+✅ Reuse existing authentication
+✅ Reuse existing CSS and JS structure where appropriate
+✅ Upgrade incrementally
+✅ Create backups before modifications
+✅ Maintain compatibility with existing FastAPI backend
+
+=================================================
+PROJECT CONTEXT
+=================================================
+
+Frontend Stack:
+
+• HTML5
+• CSS3
+• Vanilla JavaScript
+• common.css
+• common.js
+• api.js
+
+Backend:
+
+• Python FastAPI
+
+Database:
+
+• Existing project database
+
+Existing Pages Include:
+
+• index.html
+• login.html
+• dashboard.html
+• jobs.html
+• applications.html
+• interview.html
+• courses.html
+• chatbot.html
+• privacy.html
+• analyzer.html (verify existence before creating)
+• common.css
+• common.js
+• api.js
+
+There may be additional files.
+
+Inspect the ENTIRE repository before taking any action.
+
+=================================================
+PHASE 1 - MANDATORY REPOSITORY AUDIT
+=================================================
+
+Before generating code, perform a complete project audit.
+
+Provide:
+
+1. Full Repository Structure
+2. Existing Pages Found
+3. Shared Components
+4. Shared Styles
+5. Shared JavaScript Utilities
+6. Existing Navigation System
+7. Existing Authentication Flow
+8. Existing Session Handling
+9. Existing Local Storage Usage
+10. Existing Resume Analyzer Logic
+11. Existing ATS Analysis Features
+12. Existing Resume Upload Workflow
+13. Backend API Endpoints Found
+14. API Request Structures
+15. API Response Structures
+16. Existing Dashboard Architecture
+17. Existing Job Search Architecture
+18. Existing Chatbot Architecture
+19. Existing Applications Module
+20. Existing Design System
+21. Reusable Components
+22. Potential Risks
+23. Missing Backend Dependencies
+24. Upgrade Strategy
+
+DO NOT WRITE IMPLEMENTATION CODE UNTIL AUDIT IS COMPLETE.
+
+=================================================
+FEATURE 1
+JOB DESCRIPTION UPLOAD + ATS ANALYSIS + RESUME TAILORING
+=================================================
+
+Create an enterprise workflow:
+
+Job Upload
+→ JD Extraction
+→ Resume Selection
+→ ATS Analysis
+→ Results Dashboard
+→ Resume Tailoring
+
+-------------------------------------------------
+JOB UPLOAD MODULE
+-------------------------------------------------
+
+Create a professional page:
+
+Upload Job Description
+
+Requirements:
+
+• Drag and drop upload
+• PDF upload
+• DOCX upload
+• TXT upload
+• Manual paste editor
+• Job Title
+• Company Name
+• Location
+• Experience Requirement
+• Application URL
+• Upload Validation
+• Upload Progress
+• Error Handling
+• Preview Before Submit
+
+Use backend integration if available.
+
+If no endpoint exists:
+
+Document exact backend endpoint requirements.
+
+-------------------------------------------------
+ATS ANALYSIS
+-------------------------------------------------
+
+STRICT RULE:
+
+Never generate fake ATS analytics.
+
+Only display:
+
+• ATS Score
+• Keyword Match
+• Skills Match
+• Missing Keywords
+• Qualification Match
+• Experience Alignment
+• Education Alignment
+• Technical Gaps
+
+WHEN returned by backend.
+
+If unsupported:
+
+Show professional unavailable state.
+
+Document:
+
+Required Endpoint
+Required Request
+Required Response
+
+DO NOT INVENT METRICS.
+
+Use:
+
+• Charts
+• Progress Bars
+• Match Indicators
+• Skill Cards
+• Comparisons
+• Insight Panels
+
+-------------------------------------------------
+AI RESUME TAILORING
+-------------------------------------------------
+
+Create:
+
+AI Resume Tailoring
+
+Must Support:
+
+• Missing Keywords
+• Summary Improvement
+• Experience Enhancement
+• Project Enhancement
+• ATS Optimization
+• Technical Skill Suggestions
+• Side-by-side Comparison
+• Accept Suggestion
+• Reject Suggestion
+• Save Version
+• Export Version
+
+Never fabricate:
+
+❌ Job experience
+❌ Certifications
+❌ Achievements
+❌ Employment history
+
+All recommendations must be based on actual resume content.
+
+-------------------------------------------------
+ANALYSIS HISTORY
+-------------------------------------------------
+
+Provide:
+
+• ATS Score History
+• Job Title
+• Company
+• Resume Used
+• Date
+• Status
+• Open Analysis
+• Reanalyze
+
+Persist through backend.
+
+If unavailable:
+
+Implement documented localStorage fallback.
+
+=================================================
+FEATURE 2
+RECRUITER INTELLIGENCE PLATFORM
+=================================================
+
+Create new navigation category:
+
+Recruiter Intelligence
+
+-------------------------------------------------
+RECRUITER DISCOVERY
+-------------------------------------------------
+
+Provide:
+
+• Recruiter Search
+• Company Filter
+• Role Filter
+• Industry Filter
+• Location Filter
+• Hiring Specialization Filter
+
+Recruiter Cards:
+
+• Profile
+• Name
+• Designation
+• Company
+• Hiring Domain
+• Roles Hired For
+• Location
+• Profile Link
+
+STRICT RULE:
+
+Never fabricate recruiter information.
+
+If no recruiter source exists:
+
+Create DEMO DATA MODE.
+
+Clearly label it.
+
+Document backend requirements.
+
+-------------------------------------------------
+RECRUITER PROFILE
+-------------------------------------------------
+
+Include:
+
+• Profile Photo
+• Initial Fallback
+• About Recruiter
+• Company
+• Hiring Types
+• Open Roles
+• Professional Links
+
+Actions:
+
+• View
+• Save
+• Contact
+• Generate Outreach
+
+-------------------------------------------------
+AI RECRUITER OUTREACH
+-------------------------------------------------
+
+Generate:
+
+1. LinkedIn Request
+2. Recruiter Outreach
+3. Referral Request
+4. Follow-Up Message
+5. Interview Follow-Up
+
+Features:
+
+• Edit
+• Copy
+• Save Draft
+• Regenerate
+
+Never auto-send.
+
+-------------------------------------------------
+SAVED RECRUITERS
+-------------------------------------------------
+
+Features:
+
+• Save
+• Remove
+• Search
+• Outreach Tracking
+• Status Tracking
+
+Use backend persistence.
+
+Otherwise localStorage.
+
+=================================================
+COMPLETE UI/UX TRANSFORMATION
+=================================================
+
+Apply supplied UI references to the ENTIRE platform.
+
+Target Quality:
+
+• Stripe
+• Linear
+• Notion
+• Microsoft
+• Vercel
+• HubSpot
+• LinkedIn Premium
+
+Design Principles:
+
+• Modern SaaS
+• Professional
+• Clean
+• Enterprise Ready
+• Responsive
+• Accessible
+• Performance Focused
+
+Create:
+
+• Unified Design System
+• Design Tokens
+• Color System
+• Typography System
+• Spacing Scale
+• Card System
+• Form System
+• Navigation System
+• Modal System
+• Notification System
+
+=================================================
+PAGES TO REDESIGN
+=================================================
+
+1. Login
+2. Dashboard
+3. Jobs
+4. Resume Analyzer
+5. Upload Job
+6. ATS Analysis
+7. Resume Tailoring
+8. Recruiters
+9. Saved Recruiters
+10. Applications
+11. Referrals
+12. Interview
+13. Courses
+14. Chatbot
+15. Privacy
+16. Settings
+
+=================================================
+NAVIGATION STRUCTURE
+=================================================
+
+OVERVIEW
+• Dashboard
+
+CAREER INTELLIGENCE
+• Find Jobs
+• Upload Job
+• Resume Analyzer
+• ATS Analysis
+• Resume Tailoring
+
+RECRUITER NETWORK
+• Recruiters
+• Saved Recruiters
+
+APPLICATION MANAGEMENT
+• Applications
+• Referrals
+
+CAREER DEVELOPMENT
+• Interview Preparation
+• Courses
+
+TOOLS
+• JobNex Copilot
+
+SETTINGS
+• Privacy & Settings
+
+Requirements:
+
+✅ Active States
+✅ Mobile Navigation
+✅ Sidebar
+✅ Breadcrumbs
+✅ Consistent Topbar
+
+=================================================
+INTEGRATION REQUIREMENTS
+=================================================
+
+Every button must work.
+
+Every form must work.
+
+Every page must be linked.
+
+Every workflow must connect.
+
+Validate:
+
+• File Uploads
+• Forms
+• Navigation
+• Sessions
+
+Use:
+
+• FormData for files
+• Existing API contracts
+• Existing auth system
+
+Prevent:
+
+• Duplicate submissions
+• Duplicate event listeners
+• Broken links
+• Unsafe HTML
+• API mismatch
+
+=================================================
+TECHNICAL RULES
+=================================================
+
+Keep:
+
+• HTML
+• CSS
+• Vanilla JS
+
+No Framework Migration.
+
+Maintain:
+
+• common.css
+• common.js
+• api.js
+
+Use:
+
+• Reusable Components
+• Modular JS
+• Semantic HTML
+• Responsive CSS
+
+Avoid:
+
+• Duplicate CSS
+• Duplicate Logic
+• Hardcoded Analytics
+• Mocked Production Features
+
+=================================================
+TESTING PHASE
+=================================================
+
+Verify:
+
+□ Login
+□ Logout
+□ Dashboard
+□ Jobs
+□ Resume Upload
+□ ATS Flow
+□ Resume Tailoring
+□ Recruiters
+□ Saved Recruiters
+□ Outreach
+□ Applications
+□ Referrals
+□ Interview
+□ Courses
+□ Chatbot
+□ Privacy
+
+Verify:
+
+□ API Integration
+□ Error States
+□ Loading States
+□ Empty States
+□ Mobile
+□ Tablet
+□ Desktop
+□ Authentication
+□ Persistence
+□ Backend Connectivity
+
+No feature is complete until tested.
+
+=================================================
+FINAL DELIVERABLES
+=================================================
+
+Provide:
+
+1. Repository Audit Report
+2. Architecture Decisions
+3. Design System Documentation
+4. Files Created
+5. Files Modified
+6. Components Created
+7. Components Reused
+8. API Integrations Reused
+9. New APIs Required
+10. Backend Contracts Required
+11. Database Changes Required
+12. Testing Report
+13. Feature Completion Matrix
+14. Known Limitations
+15. Deployment Notes
+16. Future Improvements
+
+Do not stop at analysis.
+Do not stop at UI mockups.
+Do not stop at code snippets.
+
+Work directly through the existing codebase and produce a production-ready JOBNEX MVP-2 upgrade with complete integration, maintainability, honest backend reporting, professional UX, responsive design, and enterprise-level engineering quality.
