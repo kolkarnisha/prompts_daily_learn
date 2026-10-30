@@ -1,0 +1,249 @@
+FINAL OUTPUT FORMAT
+
+Provide:
+
+1. Repository Audit Report
+
+2. Architecture Decisions
+
+3. Files Created
+
+4. Files Modified
+
+5. Components Created
+
+6. Components Reused
+
+7. APIs Reused
+
+8. New APIs Required
+
+9. Backend Changes Required
+
+10. Feature Completion Status
+
+11. Testing Results
+
+12. Known Limitations
+
+13. Deployment Notes
+
+14. Future Enhancements
+
+Do not stop at design mockups.
+
+Do not stop at page creation.
+
+Do not stop at code snippets.
+
+Work through the entire codebase until the JOBNEX platform is fully integrated, professionally designed, and production-ready.
+
+
+
+
+
+
+
+
+
+
+MANDATORY TESTING CHECKLIST
+
+Verify:
+
+□ Login
+□ Logout
+□ Dashboard
+□ Resume Upload
+□ Job Upload
+□ ATS Flow
+□ Resume Tailoring
+□ Recruiter Search
+□ Saved Recruiters
+□ Outreach Generation
+□ Applications
+□ Referrals
+□ Interview Module
+□ Courses Module
+□ Chatbot
+□ Privacy Page
+
+Verify:
+
+□ Mobile
+□ Tablet
+□ Desktop
+
+Verify:
+
+□ API Errors
+□ Network Failures
+□ Empty Responses
+□ Unauthorized Sessions
+□ Duplicate Submissions
+□ Invalid Uploads
+□ Broken Navigation
+
+No feature is considered complete until tested.
+
+
+
+
+
+
+
+
+UI REDESIGN OBJECTIVE
+
+Target quality level:
+
+LinkedIn Premium
+Notion
+Stripe Dashboard
+Linear
+Vercel
+HubSpot
+Microsoft Learn
+
+The UI should communicate:
+
+Enterprise-quality
+Professional SaaS
+Career Intelligence Platform
+
+Visual priorities:
+
+1. Clarity
+2. Usability
+3. Consistency
+4. Accessibility
+5. Responsiveness
+6. Performance
+
+Avoid:
+
+- Excessive gradients
+- Flashy animations
+- Overdesigned cards
+- Large empty areas
+- Inconsistent spacing
+- Multiple button styles
+
+
+
+
+
+
+
+ATS ANALYSIS STRICT RULES
+
+Never display:
+
+- Random percentages
+- Hardcoded scores
+- Placeholder metrics
+- Fake keyword matches
+
+Only render ATS metrics when returned from the backend.
+
+If the backend does not provide:
+
+- ATS score
+- Skills gap analysis
+- Keyword matching
+- Tailoring suggestions
+
+Then:
+
+1. Show a professional unavailable state.
+2. Document the missing backend endpoint.
+3. Generate exact backend requirements.
+4. Do NOT fake functionality.
+
+
+
+
+
+PHASE 1 MUST COMPLETE BEFORE CODING
+
+Provide:
+
+1. Repository Structure Tree
+
+2. Existing Pages Found
+
+3. Existing Shared Components
+
+4. Existing Backend API Endpoints
+
+5. Existing ATS Analysis Functionality
+
+6. Existing Resume Upload Functionality
+
+7. Existing Authentication Flow
+
+8. Existing Navigation Architecture
+
+9. Existing CSS Design System
+
+10. Existing Reusable JavaScript Functions
+
+11. Existing Database Dependencies
+
+12. Missing Components Required For New Features
+
+13. Risk Analysis
+
+Do not start implementation until this audit is complete.
+
+
+
+
+
+You are a Principal Software Architect, Senior Frontend Engineer, Senior UX Designer, FastAPI Integration Specialist, Product Manager, QA Engineer, and Code Reviewer.
+
+CRITICAL MISSION:
+
+You are NOT creating a new project.
+
+You are upgrading an EXISTING production-ready project called JOBNEX.
+
+Before writing any code:
+
+1. Inspect the entire repository structure.
+2. Read every HTML, CSS, JavaScript, API integration, and FastAPI-related file.
+3. Identify reusable components.
+4. Identify existing backend endpoints.
+5. Map all frontend pages to backend APIs.
+6. Document existing workflows.
+7. Understand authentication flow.
+8. Understand localStorage/sessionStorage usage.
+9. Understand current navigation architecture.
+10. Create a backend/frontend dependency map.
+
+DO NOT:
+
+❌ Create fake backend endpoints.
+❌ Invent ATS scores.
+❌ Invent recruiter data.
+❌ Replace the project architecture.
+❌ Rewrite existing working code unnecessarily.
+❌ Break API contracts.
+❌ Use placeholder functions pretending to be complete.
+❌ Claim a feature works if it has not been implemented and tested.
+❌ Generate isolated demo pages disconnected from the platform.
+
+ALWAYS:
+
+✅ Reuse existing code first.
+✅ Preserve working functionality.
+✅ Maintain existing authentication.
+✅ Maintain existing database compatibility.
+✅ Maintain the Vanilla JavaScript architecture.
+✅ Keep common.css and common.js as shared resources.
+✅ Integrate features into existing workflows.
+✅ Use existing API response structures.
+✅ Document every new dependency.
+✅ Create backups before modifying files.
+✅ Verify links between pages.
+✅ Keep components reusable and maintainable.
