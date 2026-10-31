@@ -1,0 +1,32 @@
+I have uploaded my existing project folder: job-main.zip.
+
+Your task is to analyze the entire codebase and update the existing project (do not rebuild from scratch).
+
+Implement these 2 new features with full frontend and backend integration:
+
+1. Job Upload + ATS Resume Tailoring
+- Add Job Upload page (PDF/DOCX/Text JD upload).
+- Extract and store job details.
+- Connect uploaded Job Description with existing ATS Resume Analysis.
+- Calculate Resume Match Score.
+- Show matched keywords, missing keywords, skill gaps, ATS recommendations, and resume tailoring suggestions.
+- Update both Python backend and HTML/CSS/JavaScript frontend.
+- Integrate into existing ATS workflow.
+
+2. Recruiters Section
+- Add Recruiter Dashboard.
+- Job Management (create/view/edit jobs).
+- Candidate Applications list.
+- Candidate Pipeline stages.
+- Candidate Search & Filters.
+- Recruiter Analytics cards.
+- Complete backend APIs and frontend UI integration.
+
+Requirements:
+- Use existing project architecture.
+- Modify existing files where appropriate.
+- Create new files only when necessary.
+- Maintain current UI design and navigation.
+- Ensure all routes, APIs, forms, and database logic are connected and working.
+- Provide complete code changes.
+- Generate and return a fully updated downloadable ZIP file named job-main-updated.zip.
