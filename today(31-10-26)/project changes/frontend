@@ -1,0 +1,281 @@
+You are a Senior Frontend Architect and Product Designer.
+
+Analyze the complete existing frontend codebase and implement the following TWO NEW FEATURES while preserving the current UI design system, routing structure, component architecture, state management, responsiveness, and coding standards.
+
+IMPORTANT:
+- Do NOT rebuild existing pages.
+- Do NOT modify working functionality.
+- Reuse existing components and styling patterns wherever possible.
+- Follow current folder conventions.
+- Ensure production-ready code.
+- Mobile responsive.
+- Accessible UI.
+- Clean reusable components.
+- Add loading, empty, success, and error states.
+
+====================================================
+FEATURE 1: JOB UPLOAD + ATS TAILORING CONNECTION
+====================================================
+
+GOAL:
+Connect job upload functionality with the existing Resume Analysis / ATS Score section.
+
+USER FLOW:
+
+Step 1:
+User uploads a Job Description using:
+- Paste JD Text
+OR
+- Upload PDF/DOC/DOCX file
+
+Step 2:
+Display extracted job details:
+
+- Job Title
+- Company
+- Required Skills
+- Preferred Skills
+- Experience
+- Keywords
+- Responsibilities
+
+Step 3:
+Automatically connect this data to ATS Resume Analysis.
+
+Add a new section inside Resume Analysis:
+
+"Job Match Analysis"
+
+Display:
+
+1. ATS Match Score
+   - Circular Score Card
+   - Score out of 100
+
+2. Keyword Match
+
+Show:
+- Matched Keywords
+- Missing Keywords
+
+3. Skill Gap Analysis
+
+Sections:
+- Skills Found
+- Skills Missing
+- Critical Missing Skills
+
+4. Resume Tailoring Suggestions
+
+Show categorized recommendations:
+
+- Content Improvements
+- Skill Improvements
+- Experience Improvements
+- ATS Optimization Tips
+
+5. Improvement Priority Meter
+
+Categories:
+- High Priority
+- Medium Priority
+- Low Priority
+
+6. Match Visualization
+
+Create visual cards/charts:
+
+- ATS Score Progress Bar
+- Keyword Match Percentage
+- Skill Coverage Percentage
+
+UI REQUIREMENTS:
+
+Create new reusable components:
+
+/components/job-upload
+    JobUploader
+    JobDetailsCard
+    KeywordAnalysis
+    SkillGapCard
+    TailoringSuggestions
+    MatchScoreWidget
+
+Add new page/routes if needed:
+
+/job-upload
+
+OR integrate into existing ATS page.
+
+Keep design consistent with current Jobnex branding.
+
+====================================================
+FEATURE 2: RECRUITERS SECTION
+====================================================
+
+GOAL:
+Provide recruiters with a dedicated dashboard and candidate management area.
+
+Create a new navigation item:
+
+Recruiters
+
+Route:
+
+/recruiters
+
+MAIN PAGE SECTIONS
+
+----------------------------------------------------
+Section A: Recruiter Dashboard
+----------------------------------------------------
+
+Dashboard cards:
+
+- Total Jobs
+- Active Jobs
+- Candidates Applied
+- Interviews Scheduled
+- Hires Completed
+
+Use modern analytics cards.
+
+----------------------------------------------------
+Section B: Job Management
+----------------------------------------------------
+
+Table/Grid:
+
+Columns:
+
+- Job Title
+- Company
+- Status
+- Applicants
+- Created Date
+- Actions
+
+Actions:
+
+- View
+- Edit
+- Archive
+
+----------------------------------------------------
+Section C: Candidate Pipeline
+----------------------------------------------------
+
+Pipeline Kanban Board:
+
+Columns:
+
+- Applied
+- Screening
+- Interview
+- Technical Round
+- HR Round
+- Offer
+- Hired
+
+Candidate cards:
+
+- Name
+- ATS Score
+- Experience
+- Skills
+
+Drag and Drop support.
+
+----------------------------------------------------
+Section D: Candidate Search
+----------------------------------------------------
+
+Advanced filters:
+
+- Skill
+- Experience
+- Location
+- ATS Score Range
+
+Search bar.
+
+----------------------------------------------------
+Section E: Candidate Details Drawer
+----------------------------------------------------
+
+Click candidate card:
+
+Open side panel showing:
+
+- Resume Summary
+- ATS Score
+- Key Skills
+- Missing Skills
+- Interview Notes
+- Contact Details
+
+----------------------------------------------------
+Section F: Analytics
+----------------------------------------------------
+
+Recruitment Metrics
+
+Cards/Charts:
+
+- Hiring Funnel
+- Source Effectiveness
+- Time To Hire
+- Candidate Conversion Rate
+
+====================================================
+TECHNICAL REQUIREMENTS
+====================================================
+
+1. Follow current project structure.
+
+2. Create reusable components.
+
+3. Type-safe implementation.
+
+4. Add mock API integration layer.
+
+5. Use proper loading skeletons.
+
+6. Add empty states.
+
+7. Add error boundaries.
+
+8. Responsive design:
+   - Mobile
+   - Tablet
+   - Desktop
+
+9. Maintain existing theme.
+
+10. Add route protection architecture placeholder.
+
+====================================================
+EXPECTED OUTPUT
+====================================================
+
+Provide:
+
+1. Complete implementation plan.
+
+2. Folder structure changes.
+
+3. Components to be added.
+
+4. Pages to be added.
+
+5. State flow diagram.
+
+6. API contracts/interfaces.
+
+7. Actual production-ready code modifications.
+
+8. Integration points with existing ATS analysis section.
+
+9. Any existing files that need modification.
+
+10. Ensure no existing feature breaks.
