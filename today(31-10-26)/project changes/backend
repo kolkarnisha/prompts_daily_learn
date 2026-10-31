@@ -1,0 +1,13 @@
+Act as a Principal Python Backend Architect for the Jobnex project. First analyze my entire existing codebase,
+including all frontend HTML/CSS/JavaScript files, API calls, routes, database models, services, utilities, and ATS Resume Analysis flow.
+Do not create a new architecture or duplicate functionality. Instead, modify and extend the existing backend so it perfectly supports the current
+frontend implementation. Identify every frontend action, API request, form submission, button click, file upload, dashboard widget, recruiter workflow
+, and ATS analysis operation, then create or update the required Python backend logic, database models, endpoints, validation layers, business logic, 
+and service functions to ensure seamless end-to-end integration. Implement Job Upload functionality that accepts PDF/DOCX/Text job descriptions,
+extracts job requirements, stores structured job data, connects it to ATS Resume Analysis, calculates resume-job match scores,
+identifies matched and missing keywords, performs skill-gap analysis, and returns resume-tailoring recommendations. Also implement a complete Recruiter
+Module with recruiter dashboard APIs, job management, candidate management, candidate pipeline tracking, filtering, analytics, and reporting.
+Refactor existing code where necessary but avoid breaking any working features. Reuse existing patterns, naming conventions, authentication mechanisms,
+and database structure wherever possible. Add proper error handling, logging, validation, API documentation, and scalable service-layer architecture.
+Ensure every backend endpoint matches the frontend requirements exactly, fix any integration gaps automatically, update all affected files, a
+nd provide production-ready code that works immediately with the existing frontend without requiring manual adjustments.
