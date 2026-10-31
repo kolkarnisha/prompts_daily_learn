@@ -1,0 +1,9 @@
+This project is Jobnex.
+
+Primary goal:
+Connect ATS Resume Analysis with Job Description matching so users can see how well their resume matches a specific job and receive AI-powered tailoring suggestions.
+
+Secondary goal:
+Create a Recruiter Portal that allows recruiters to manage jobs, candidates, pipelines, and hiring analytics from a single dashboard.
+
+Before generating code, first inspect the existing frontend folder structure and identify the safest integration points. Prefer integrating into existing ATS pages instead of creating duplicate functionality.
